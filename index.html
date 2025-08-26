@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MyTodoList_RayhanXP</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app" id="app">
+    <header>
+
+      <div class="brand">
+        <div>
+          <div>MyTodoList_RayhanXP</div>
+          <div class="tagline">Sederhana, Cepat, Mudah, Tersimpan Offline</div>
+        </div>
+      </div>
+      <div class="controls">
+        <button class="btn" id="toogle-theme">🌓Mode</button>
+        <button class="btn badge" id="clear-completed">🧹Bersihkan
+          <span class="count" id="done-count">0</span>
+        </button>
+        <button class="btn" id="export-btn">⬆️Ekspor</button>
+        <button class="btn" id="import-btn">⬇️Impor</button>
+      </div>
+    </header>
+
+    <div class="content">
+      <form id="todo-form" class="form" autocomplete="off">
+        <input type="text" id="todo-input" placeholder="Apa yang ingin kamu kerjakan?" required />
+        <input type="date" id="todo-date" placeholder="Tanggal" />
+        <button class="btn-primary" type="submit">Tambah</button>
+      </form>
+
+    <div class="list-card">
+      <div class="toolbar">
+        <div class="tabs">
+          <button class="tab active" data-filter="all">Semua</button>
+          <button class="tab" data-filter="active">Aktif</button>
+          <button class="tab" data-filter="clear-completed">Selesai</button>
+        </div>
+      </div>
+
+      <ul id="todo-list">
+        <li class="empty">Belum ada tugas</li>
+      </ul>
+    </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
